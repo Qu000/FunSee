@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JHSearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="179"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="161" height="179"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headImage1" translatesAutoresizingMaskIntoConstraints="NO" id="DYU-II-QVn">
+                        <rect key="frame" x="0.0" y="0.0" width="161" height="129"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="详情描述" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU5-Tg-Kva">
+                        <rect key="frame" x="0.0" y="129" width="161" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="gtJ-10-b4S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VU5-Tg-Kva" secondAttribute="bottom" id="4g2-If-cqa"/>
+                <constraint firstItem="VU5-Tg-Kva" firstAttribute="top" secondItem="DYU-II-QVn" secondAttribute="bottom" id="5jZ-hN-trt"/>
+                <constraint firstAttribute="trailing" secondItem="DYU-II-QVn" secondAttribute="trailing" id="GAd-iR-gSs"/>
+                <constraint firstItem="DYU-II-QVn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="K6N-Jj-yps"/>
+                <constraint firstItem="VU5-Tg-Kva" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MAG-D9-5FW"/>
+                <constraint firstItem="DYU-II-QVn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TCa-TV-c46"/>
+                <constraint firstAttribute="trailing" secondItem="VU5-Tg-Kva" secondAttribute="trailing" id="fAj-La-X5Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="161" height="179"/>
+            <connections>
+                <outlet property="desctionLab" destination="VU5-Tg-Kva" id="WZA-Zf-6AT"/>
+                <outlet property="headImage" destination="DYU-II-QVn" id="SA7-nJ-ir9"/>
+            </connections>
+            <point key="canvasLocation" x="54.5" y="107.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="headImage1" width="144" height="144"/>
+    </resources>
+</document>

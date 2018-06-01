@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JHProfileCell">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="194"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AR小游戏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDK-kQ-xaY">
+                        <rect key="frame" x="5" y="5" width="165" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fOc-fF-Wlf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AR_h" translatesAutoresizingMaskIntoConstraints="NO" id="9By-Wv-t3B">
+                        <rect key="frame" x="0.0" y="30" width="175" height="164"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9By-Wv-t3B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KoX-rV-mvL"/>
+                <constraint firstItem="9By-Wv-t3B" firstAttribute="top" secondItem="mDK-kQ-xaY" secondAttribute="bottom" constant="5" id="VUA-8f-7cY"/>
+                <constraint firstAttribute="trailing" secondItem="mDK-kQ-xaY" secondAttribute="trailing" constant="5" id="VUE-qf-Fmi"/>
+                <constraint firstAttribute="trailing" secondItem="9By-Wv-t3B" secondAttribute="trailing" id="bwH-Fs-cPu"/>
+                <constraint firstItem="mDK-kQ-xaY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="iTu-Pd-RAh"/>
+                <constraint firstItem="mDK-kQ-xaY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="vC9-D4-YQn"/>
+                <constraint firstAttribute="bottom" secondItem="9By-Wv-t3B" secondAttribute="bottom" id="z2G-xJ-coU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="175" height="194"/>
+            <connections>
+                <outlet property="imageView" destination="9By-Wv-t3B" id="wW3-M2-J3V"/>
+                <outlet property="titleLab" destination="mDK-kQ-xaY" id="KaN-6m-MAN"/>
+            </connections>
+            <point key="canvasLocation" x="71.5" y="159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="AR_h" width="200" height="200"/>
+    </resources>
+</document>
